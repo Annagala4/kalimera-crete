@@ -1,0 +1,49 @@
+/* ==========================================================================
+   Sit With Anna — Spacing, Radius, Shadow, Motion Tokens
+   ========================================================================== */
+
+:root {
+  /* Spacing — 4px base scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-32: 128px;
+
+  /* Radius — soft, rounded, feminine but not pill-everything */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-pill: 999px;
+
+  /* Shadow — soft, warm, low-contrast (no harsh black shadows) */
+  --shadow-sm: 0 1px 3px rgba(46, 36, 58, 0.08);
+  --shadow-md: 0 6px 20px rgba(46, 36, 58, 0.10);
+  --shadow-lg: 0 16px 40px rgba(46, 36, 58, 0.14);
+  --shadow-focus: 0 0 0 3px rgba(180, 122, 140, 0.35);
+
+  /* Borders */
+  --border-width-hairline: 1px;
+  --border-width-default: 1.5px;
+
+  /* Motion — gentle, unhurried, never bouncy */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1); /* @kind other */
+  --ease-out-soft: cubic-bezier(0.16, 1, 0.3, 1); /* @kind other */
+  --duration-fast: 150ms; /* @kind other */
+  --duration-standard: 250ms; /* @kind other */
+  --duration-slow: 450ms; /* @kind other */
+
+  /* Max content widths */
+  --content-width-narrow: 640px;
+  --content-width-default: 1080px;
+  --content-width-wide: 1280px;
+}

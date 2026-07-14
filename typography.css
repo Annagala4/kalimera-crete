@@ -1,0 +1,37 @@
+/* ==========================================================================
+   Sit With Anna — Typography Tokens
+   ========================================================================== */
+
+:root {
+  --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif; /* stand-in for Britannic */
+  --font-body: 'Montserrat', -apple-system, 'Segoe UI', sans-serif;
+
+  /* Display / heading scale */
+  --font-size-display-xl: 64px;
+  --font-size-display-lg: 48px;
+  --font-size-display-md: 36px;
+  --font-size-display-sm: 28px;
+
+  /* Body scale */
+  --font-size-xl: 20px;
+  --font-size-lg: 18px;
+  --font-size-md: 16px;
+  --font-size-sm: 14px;
+  --font-size-xs: 12px;
+
+  --line-height-display: 1.15;
+  --line-height-heading: 1.25;
+  --line-height-body: 1.65;
+  --line-height-tight: 1.4;
+
+  --letter-spacing-display: 0em;
+  --letter-spacing-eyebrow: 0.14em;
+  --letter-spacing-button: 0.04em;
+
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-display-bold: 800;
+}

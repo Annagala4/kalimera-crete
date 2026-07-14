@@ -1,0 +1,474 @@
+/* ==========================================================================
+   Kalimera, Crete — Anna Gala's Guide
+   Page styles, built on the Sit With Anna design tokens
+   (colors.css, typography.css, spacing.css).
+
+   Fonts: Britannic (brand display face) has no free/licensed webfont
+   source, so Playfair Display (Google Fonts) stands in for it, as
+   flagged in the handoff. Montserrat is the real brand body face.
+   ========================================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-soft-white);
+  font-family: var(--font-body);
+}
+
+a {
+  color: var(--color-deep-mauve);
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  color: var(--color-midnight-plum);
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ---- Layout helpers ---- */
+
+.section {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 88px 32px;
+}
+
+.section--full {
+  max-width: none;
+}
+
+.bg-soft-white {
+  background: var(--color-soft-white);
+}
+
+.bg-warm-linen {
+  background: var(--color-warm-linen);
+}
+
+/* ---- Nav ---- */
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: color-mix(in oklch, var(--color-soft-white) 92%, transparent);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.nav-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 16px 32px;
+}
+
+.nav-wordmark {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--color-midnight-plum);
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.nav-links a {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--text-body-strong);
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: var(--color-midnight-plum);
+}
+
+/* ---- Hero ---- */
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+  flex-wrap: wrap;
+  padding-top: 64px;
+}
+
+.hero-left {
+  flex: 1 1 380px;
+  min-width: 300px;
+}
+
+.hero-eyebrow {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  color: var(--color-deep-mauve);
+  margin-bottom: 18px;
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 1.1;
+  color: var(--color-midnight-plum);
+  margin: 0 0 24px;
+}
+
+.hero-subline {
+  font-family: var(--font-body);
+  font-size: 19px;
+  color: var(--text-body-strong);
+  letter-spacing: 0.01em;
+  margin-bottom: 18px;
+}
+
+.hero-caption {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--text-caption);
+  line-height: 1.8;
+}
+
+.hero-map-card {
+  flex: 1 1 320px;
+  max-width: 420px;
+  background: var(--color-blush-mist);
+  border: 1px solid var(--border-subtle);
+  border-radius: 20px;
+  box-shadow: var(--shadow-sm);
+  padding: 22px;
+}
+
+.hero-map-card img {
+  width: 100%;
+  display: block;
+}
+
+/* ---- Legend ---- */
+
+.legend-section {
+  padding-top: 0;
+  padding-bottom: 56px;
+}
+
+.legend-panel {
+  background: var(--color-blush-mist);
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  padding: 22px 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 40px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--text-heading);
+}
+
+.legend-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ---- My Crete Story ---- */
+
+.story {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.story-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  gap: 48px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.story-photo-wrap {
+  flex: 1 1 260px;
+  max-width: 320px;
+}
+
+.story-photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  display: block;
+  object-fit: cover;
+  border-radius: 24px;
+  background: var(--color-blush-mist);
+  border: 1px solid var(--border-subtle);
+}
+
+.story-text {
+  flex: 2 1 600px;
+  min-width: 300px;
+}
+
+.story-eyebrow {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  color: var(--color-deep-mauve);
+  margin-bottom: 14px;
+}
+
+.story-heading {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 34px;
+  color: var(--color-midnight-plum);
+  margin: 0 0 28px;
+}
+
+.story-paragraphs {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--text-body);
+  column-count: 2;
+  column-gap: 32px;
+}
+
+.story-paragraphs p {
+  margin: 0 0 20px;
+  break-inside: avoid;
+}
+
+/* ---- Region sections ---- */
+
+.region-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.region-band {
+  height: 6px;
+  width: 64px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  background: var(--color-midnight-plum);
+}
+
+.region-heading {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--color-midnight-plum);
+  margin: 0 0 40px;
+}
+
+.category-block {
+  margin-bottom: 44px;
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+.category-title-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.category-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.category-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 21px;
+  color: var(--color-midnight-plum);
+  margin: 0;
+}
+
+.pill {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  border: 1px solid;
+  border-radius: 999px;
+  padding: 5px 14px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.place-card {
+  background: var(--color-soft-white);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+  padding: 22px 24px;
+}
+
+.place-link a {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.place-desc {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--text-body);
+  margin: 6px 0 0;
+}
+
+.tip {
+  border-radius: 10px;
+  padding: 12px 16px;
+  border-left: 3px solid;
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-body);
+  margin-top: 8px;
+}
+
+.tip-label {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  margin-right: 6px;
+}
+
+/* ---- Footer ---- */
+
+.footer {
+  font-family: var(--font-body);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--text-caption);
+  text-align: center;
+  padding: 48px 32px 64px;
+  background: var(--color-warm-linen);
+}
+
+/* ---- Category color groups ---- */
+
+.cat-food .category-dot { background: var(--color-dusty-rose); }
+.cat-food .place-link a { color: var(--color-dusty-rose); }
+.cat-food .pill {
+  color: var(--color-dusty-rose);
+  border-color: var(--color-dusty-rose);
+}
+.cat-food .tip {
+  background: color-mix(in oklch, var(--color-dusty-rose) 16%, var(--color-soft-white));
+  border-left-color: var(--color-dusty-rose);
+}
+.cat-food .tip-label {
+  color: var(--color-dusty-rose);
+}
+
+.cat-beach .category-dot { background: var(--color-deep-mauve); }
+.cat-beach .place-link a { color: var(--color-deep-mauve); }
+.cat-beach .pill {
+  color: var(--color-deep-mauve);
+  border-color: var(--color-deep-mauve);
+}
+.cat-beach .tip {
+  background: color-mix(in oklch, var(--color-deep-mauve) 14%, var(--color-soft-white));
+  border-left-color: var(--color-deep-mauve);
+}
+.cat-beach .tip-label {
+  color: var(--color-deep-mauve);
+}
+
+.cat-bars .category-dot { background: color-mix(in oklch, var(--color-dusty-rose) 55%, white); }
+.cat-bars .place-link a { color: color-mix(in oklch, var(--color-dusty-rose) 55%, white); }
+.cat-bars .pill {
+  color: color-mix(in oklch, var(--color-dusty-rose) 55%, white);
+  border-color: color-mix(in oklch, var(--color-dusty-rose) 55%, white);
+}
+.cat-bars .tip {
+  background: color-mix(in oklch, var(--color-dusty-rose) 12%, var(--color-soft-white));
+  border-left-color: color-mix(in oklch, var(--color-dusty-rose) 55%, white);
+}
+.cat-bars .tip-label {
+  color: color-mix(in oklch, var(--color-dusty-rose) 55%, white);
+}
+
+.cat-landmarks .category-dot { background: var(--color-terracotta-blush); }
+.cat-landmarks .place-link a { color: var(--color-terracotta-blush); }
+.cat-landmarks .pill {
+  color: var(--color-terracotta-blush);
+  border-color: var(--color-terracotta-blush);
+}
+.cat-landmarks .tip {
+  background: color-mix(in oklch, var(--color-terracotta-blush) 16%, var(--color-soft-white));
+  border-left-color: var(--color-terracotta-blush);
+}
+.cat-landmarks .tip-label {
+  color: var(--color-terracotta-blush);
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 720px) {
+  .nav-links {
+    display: none;
+  }
+  .section {
+    padding: 56px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .story-paragraphs {
+    column-count: 1;
+  }
+}

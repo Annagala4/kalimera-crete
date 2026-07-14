@@ -1,0 +1,82 @@
+/* ==========================================================================
+   Sit With Anna — Color Tokens
+   Source: uploads/Brand Guide.jpg
+   ========================================================================== */
+
+:root {
+  /* ---- Anchor (base hues) ---- */
+  --color-midnight-plum: #2E243A;
+  --color-deep-mauve:    #5C3D52;
+  --color-dusty-rose:    #B47A8C;
+
+  /* ---- Surface (base hues) ---- */
+  --color-soft-white: #FAF6F4;
+  --color-warm-linen: #F6EDE2;
+  --color-blush-mist: #F1E4E8;
+
+  /* ---- Accent (base hues) ---- */
+  --color-terracotta-blush: #C9967E;
+  --color-muted-plum:       #8A6A7E;
+  --color-gold-leaf:        #C9A227; /* solid fallback for the Gold Leaf foil swatch */
+  --gradient-gold-leaf: linear-gradient(135deg, #C9967E 0%, #C9A227 45%, #8A6A7E 100%); /* @kind color */
+
+  /* ---- Neutral ramp derived from anchors, for borders/disabled/subtle states ---- */
+  --color-neutral-100: #FAF6F4;
+  --color-neutral-200: #F1E4E8;
+  --color-neutral-300: #E4D3D8;
+  --color-neutral-400: #C9B7BE;
+  --color-neutral-500: #B47A8C;
+  --color-neutral-600: #8A6A7E;
+  --color-neutral-700: #5C3D52;
+  --color-neutral-800: #3E3048;
+  --color-neutral-900: #2E243A;
+
+  /* ---- Functional/semantic status (mixed to stay in-family — no stock red/green) ---- */
+  --color-success: #6E8F6B;
+  --color-success-bg: #EAF1E7;
+  --color-warning: #C9967E;
+  --color-warning-bg: #FBF0E7;
+  --color-error: #A8455A;
+  --color-error-bg: #F7E7EA;
+  --color-info: #5C3D52;
+  --color-info-bg: #F1E4E8;
+
+  /* ================= Semantic aliases ================= */
+
+  /* Text */
+  --text-heading: var(--color-midnight-plum);
+  --text-body: var(--color-muted-plum);
+  --text-body-strong: var(--color-deep-mauve);
+  --text-caption: var(--color-muted-plum);
+  --text-inverse: var(--color-soft-white);
+  --text-link: var(--color-deep-mauve);
+  --text-link-hover: var(--color-midnight-plum);
+
+  /* Surfaces */
+  --surface-page: var(--color-soft-white);
+  --surface-section: var(--color-warm-linen);
+  --surface-card: var(--color-soft-white);
+  --surface-card-alt: var(--color-blush-mist);
+  --surface-quote: var(--color-blush-mist);
+  --surface-inverse: var(--color-midnight-plum);
+
+  /* Borders */
+  --border-subtle: #E7D9DC;
+  --border-default: var(--color-dusty-rose);
+  --border-strong: var(--color-deep-mauve);
+
+  /* Interactive */
+  --action-primary: var(--color-deep-mauve);
+  --action-primary-hover: var(--color-midnight-plum);
+  --action-primary-active: #221A2C;
+  --action-secondary: transparent;
+  --action-secondary-border: var(--color-deep-mauve);
+  --action-disabled-bg: var(--color-neutral-300);
+  --action-disabled-text: var(--color-neutral-500);
+
+  --focus-ring: var(--color-dusty-rose);
+
+  /* Icons / accents */
+  --icon-default: var(--color-dusty-rose);
+  --icon-strong: var(--color-deep-mauve);
+}
